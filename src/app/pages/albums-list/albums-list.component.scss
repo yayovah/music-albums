@@ -1,0 +1,51 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+.mat-elevation-z8 {
+  width: 100%;
+}
+
+/* Cursor i il·luminació de la fila */
+.mat-mdc-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.mat-mdc-row:hover {
+  background-color: #333333 !important; /* Il·lumina la fila al passar el ratolí */
+}
+
+/* Estil per a les capçaleres */
+.mat-mdc-header-cell {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #333;
+}
+
+.card {
+  max-width: 400px;
+  background-color: #fefefe;
+}
+
+.header-image {
+  background-size: cover;
+}
+
+.grid-container {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.llista-hr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px;
+    margin-top: 30px;
+}

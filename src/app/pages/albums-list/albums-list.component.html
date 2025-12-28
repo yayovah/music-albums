@@ -1,13 +1,73 @@
 <div class="container">
-    <h1>Albums</h1>
-    <ul class="list-group">
-        @for (album of albums(); track album.id) {
+    <div class="llista-hr">
+     <h1>Albums</h1>
+
+        <mat-button-toggle-group 
+            name="vistaSelect" 
+            aria-label="Font Style"
+            [value]="vista()"
+            (change)="vista.set($event.value)"
+            >
+            <mat-button-toggle value="llista"><i class="fa-solid fa-list"></i> </mat-button-toggle>
+            <mat-button-toggle value="cards"><i class="fa-solid fa-grip-vertical"></i></mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+@if(vista() == 'llista'){
+    <table mat-table [dataSource]="albums()" class="mat-elevation-z8">
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let album"> {{album.id}} </td>
+        </ng-container>
+
+        <!-- Title Column -->
+        <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> Title </th>
+            <td mat-cell *matCellDef="let album"> {{album.title}} </td>
+        </ng-container>
+
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row 
+            [routerLink]="['/albums', row.id]"
+            *matRowDef="let row; columns: displayedColumns;"
+            class="mat-mdc-row"></tr>
+    </table>
+}
+@if(vista() == 'cards'){
+    <div class="grid-container">
+    @for (album of albums(); track album.id) {
         <a 
             [routerLink]="['/albums', album.id]"
-            class="list-group-item list-group-item-action animate__animated animate__bounce animate__fadeIn"
+            class="animate__animated animate__bounce animate__fadeIn"
         >
+        <mat-card class="card" appearance="outlined">
+        <mat-card-header>
+            <div mat-card-avatar class="header-image"></div>
+            <mat-card-title>{{ album.title }}</mat-card-title>
+            <mat-card-subtitle>{{ album.id }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image 
+            [src]="'https://coverartarchive.org/release/' + album.id + '/front'"  
+            [alt]="'Portada de ' + album.title"
+            #imgRef
+            (error)="imgRef.src = 'assets/images/no-image.png'"
+        >
+        <mat-card-content>
+            <p><b>Release date:</b> {{ album.date }}</p>
+        </mat-card-content>
+        </mat-card>
+                </a>
+    }
+    </div>
+}
+<!--
+    
+    <ul class="list-group">
+        @for (album of albums(); track album.id) {
+
             {{ album.id }} - {{ album.title }}
         </a>
         }
-    </ul>
+    </ul>-->    
 </div>

@@ -1,18 +1,21 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { AlbumsService } from '../../services/albums.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { AlbumDTO } from '../../models/album.dto';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-albums-detail',
-  imports: [RouterLink],
+  imports: [RouterLink, MatExpansionModule],
   templateUrl: './albums-detail.component.html',
-  styleUrl: './albums-detail.component.scss'
+  styleUrl: './albums-detail.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AlbumsDetailComponent {
 
-   album = signal<any | null >(null);
-  
+  album = signal<any | null >(null);
+  readonly panelOpenState = signal(false);
+
   constructor(
     private albumsService: AlbumsService,
     private activatedRoute: ActivatedRoute,

@@ -1,20 +1,33 @@
 <div class="container mt-5">
-    @if(album()){
-    <div class="row animate__animated animate__bounce animate__fadeIn">
-        <div class="col-md-9">
-            <p><strong>Identifier</strong> {{ album()?.id }}</p>
-            <p><strong>Title</strong> {{ album()?.title }}</p>
-            <p><strong>Date</strong> {{ album()?.date }}</p>
-            <p><strong>Country</strong> {{ album()?.country }}</p>
-            <img
-                style="width: 50%"
-                class="rounded"
-                [src]="'https://coverartarchive.org/release/' + album().id + '/front'" 
-                [alt]="album().title"/>
-        </div>
-        <div class="col-md-3">
+        <div class="menu_back">
             <a class="btn btn-danger" routerLink="/">Back</a>
         </div>
-    </div>
-    }
+    @if(album()){
+
+        <mat-accordion class="row animate__animated animate__bounce animate__fadeIn">
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+            <mat-panel-title>Title</mat-panel-title>
+            <mat-panel-description>  {{ album()?.title }} </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>{{ album()?.id }}</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+            <mat-expansion-panel-header>
+            <mat-panel-title> Detalls</mat-panel-title>
+            <mat-panel-description>
+                Fes click per veure {{panelOpenState() ? 'menys' : 'més'}} detalls
+            </mat-panel-description>
+            </mat-expansion-panel-header>
+                        <p><strong>Date</strong> {{ album()?.date }}</p>
+                    <p><strong>Country</strong> {{ album()?.country }}</p>
+                    <img
+                        style="width: 50%"
+                        class="rounded"
+                        #imgRef
+                        (error)="imgRef.src = 'assets/images/no-image.png'"
+                        [alt]="album().title"/>
+        </mat-expansion-panel>
+        </mat-accordion>
+            }
 </div>
