@@ -12,7 +12,7 @@ export class AlbumsService {
   //private apiBase = 'https://itunes.apple.com/'
   //private search = 'search?term=1994&entity=album&limit=10'
   //private api = this.apiBase + this.search;
-  private api = "https://musicbrainz.org/ws/2/release?query=date:1994&fmt=json";
+  private api = "https://musicbrainz.org/ws/2/release?query=date:2010&fmt=json";
 
   
 

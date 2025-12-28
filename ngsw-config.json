@@ -34,7 +34,7 @@
   "dataGroups": [
     {
       "name": "albums-api",
-      "urls": ["https://musicbrainz.org/ws/2/release?query=date:1994&fmt=json"],
+      "urls": ["https://musicbrainz.org/ws/2/release?query=date:2010&fmt=json"],
       "cacheConfig": {
         "maxSize": 100,
         "maxAge": "100h",
