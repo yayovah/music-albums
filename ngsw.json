@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1766947895325,
+  "timestamp": 1766961093180,
   "index": "/music-albums/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,10 @@
       "urls": [
         "/music-albums/favicon.ico",
         "/music-albums/index.html",
-        "/music-albums/main-YUG4XFJQ.js",
+        "/music-albums/main-AIS62Q2C.js",
         "/music-albums/manifest.webmanifest",
         "/music-albums/polyfills-B6TNHZQ6.js",
-        "/music-albums/styles-5INURTSO.css"
+        "/music-albums/styles-WNKDDIZJ.css"
       ],
       "patterns": [
         "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
@@ -30,6 +30,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "/music-albums/assets/images/no-image.png",
         "/music-albums/icons/icon-128x128.png",
         "/music-albums/icons/icon-144x144.png",
         "/music-albums/icons/icon-152x152.png",
@@ -37,7 +38,11 @@
         "/music-albums/icons/icon-384x384.png",
         "/music-albums/icons/icon-512x512.png",
         "/music-albums/icons/icon-72x72.png",
-        "/music-albums/icons/icon-96x96.png"
+        "/music-albums/icons/icon-96x96.png",
+        "/music-albums/media/fa-brands-400-E7XUCEPO.woff2",
+        "/music-albums/media/fa-regular-400-LBQEIAJB.woff2",
+        "/music-albums/media/fa-solid-900-XY6737PV.woff2",
+        "/music-albums/media/fa-v4compatibility-RGK6JUWD.woff2"
       ],
       "patterns": []
     }
@@ -73,6 +78,7 @@
     }
   ],
   "hashTable": {
+    "/music-albums/assets/images/no-image.png": "6e372ecbb9ca096db1161267a62793c847859beb",
     "/music-albums/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/music-albums/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
     "/music-albums/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
@@ -82,11 +88,15 @@
     "/music-albums/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/music-albums/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/music-albums/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/music-albums/index.html": "f6dd7b005580d9086c8377f50799b5dfcc7a7bdf",
-    "/music-albums/main-YUG4XFJQ.js": "37f14c5ef05336af6f67406a9fc13cf7731df4e3",
+    "/music-albums/index.html": "7863911a6cade609bdfeb90229f00cdd2c133245",
+    "/music-albums/main-AIS62Q2C.js": "cf74167e5f6cbb51cf34429d3996414fd1c1386f",
     "/music-albums/manifest.webmanifest": "a4f9b90007efd4d1458c3bf5d6eb9a24972e5253",
+    "/music-albums/media/fa-brands-400-E7XUCEPO.woff2": "ed94030ca212e1857a6014496e7a6a43e64789e4",
+    "/music-albums/media/fa-regular-400-LBQEIAJB.woff2": "a1e663df38f3616e677a2ffd0c20cc58c87b7703",
+    "/music-albums/media/fa-solid-900-XY6737PV.woff2": "49c2d746beabbaa5b1a58d660b217feb34272636",
+    "/music-albums/media/fa-v4compatibility-RGK6JUWD.woff2": "ed95837812146abe9cb9293922f80205785e8c6b",
     "/music-albums/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
-    "/music-albums/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/music-albums/styles-WNKDDIZJ.css": "b7820db12891e00e653365074e67f1e63242d562"
   },
   "navigationUrls": [
     {
