@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1766947151510,
-  "index": "/PWA MUSIC ALBUMS/index.html",
+  "timestamp": 1766947715163,
+  "index": "/music-albums/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/PWA MUSIC ALBUMS/favicon.ico",
-        "/PWA MUSIC ALBUMS/index.html",
-        "/PWA MUSIC ALBUMS/main-YUG4XFJQ.js",
-        "/PWA MUSIC ALBUMS/manifest.webmanifest",
-        "/PWA MUSIC ALBUMS/polyfills-B6TNHZQ6.js",
-        "/PWA MUSIC ALBUMS/styles-5INURTSO.css"
+        "/music-albums/favicon.ico",
+        "/music-albums/index.html",
+        "/music-albums/main-YUG4XFJQ.js",
+        "/music-albums/manifest.webmanifest",
+        "/music-albums/polyfills-B6TNHZQ6.js",
+        "/music-albums/styles-5INURTSO.css"
       ],
       "patterns": [
         "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
@@ -30,14 +30,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/PWA MUSIC ALBUMS/icons/icon-128x128.png",
-        "/PWA MUSIC ALBUMS/icons/icon-144x144.png",
-        "/PWA MUSIC ALBUMS/icons/icon-152x152.png",
-        "/PWA MUSIC ALBUMS/icons/icon-192x192.png",
-        "/PWA MUSIC ALBUMS/icons/icon-384x384.png",
-        "/PWA MUSIC ALBUMS/icons/icon-512x512.png",
-        "/PWA MUSIC ALBUMS/icons/icon-72x72.png",
-        "/PWA MUSIC ALBUMS/icons/icon-96x96.png"
+        "/music-albums/icons/icon-128x128.png",
+        "/music-albums/icons/icon-144x144.png",
+        "/music-albums/icons/icon-152x152.png",
+        "/music-albums/icons/icon-192x192.png",
+        "/music-albums/icons/icon-384x384.png",
+        "/music-albums/icons/icon-512x512.png",
+        "/music-albums/icons/icon-72x72.png",
+        "/music-albums/icons/icon-96x96.png"
       ],
       "patterns": []
     }
@@ -73,20 +73,20 @@
     }
   ],
   "hashTable": {
-    "/PWA MUSIC ALBUMS/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/PWA MUSIC ALBUMS/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
-    "/PWA MUSIC ALBUMS/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
-    "/PWA MUSIC ALBUMS/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
-    "/PWA MUSIC ALBUMS/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
-    "/PWA MUSIC ALBUMS/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
-    "/PWA MUSIC ALBUMS/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
-    "/PWA MUSIC ALBUMS/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
-    "/PWA MUSIC ALBUMS/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/PWA MUSIC ALBUMS/index.html": "dbb896531b768b4c8a65f3118f12cd3bb1ff57af",
-    "/PWA MUSIC ALBUMS/main-YUG4XFJQ.js": "37f14c5ef05336af6f67406a9fc13cf7731df4e3",
-    "/PWA MUSIC ALBUMS/manifest.webmanifest": "a4f9b90007efd4d1458c3bf5d6eb9a24972e5253",
-    "/PWA MUSIC ALBUMS/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
-    "/PWA MUSIC ALBUMS/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/music-albums/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/music-albums/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/music-albums/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/music-albums/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/music-albums/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/music-albums/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/music-albums/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/music-albums/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/music-albums/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/music-albums/index.html": "f6dd7b005580d9086c8377f50799b5dfcc7a7bdf",
+    "/music-albums/main-YUG4XFJQ.js": "37f14c5ef05336af6f67406a9fc13cf7731df4e3",
+    "/music-albums/manifest.webmanifest": "a4f9b90007efd4d1458c3bf5d6eb9a24972e5253",
+    "/music-albums/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/music-albums/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
